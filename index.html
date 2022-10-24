@@ -8,12 +8,81 @@
     <title>Hello World!</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+  <h1 class="nadpis">POKEKLICKER</h1>
+  <div class="gameboy">
+    <div class="screback"></div>
+    <div class="screen">
+      <img src="res/img/Pokeball.png" height="230" width="360"/>
+      <p id="counter">Pokeballs: 0</p>
+    </div>
+    <div id="buttonA"><p>A</p></div>
+    <div id="buttonB"><p>B</p></div>
+    <div class="Dpad1"></div>
+    <div class="Dpad2"></div>
+  </div>
+  <div id="menu">
+    <table>
+      <tr>
+        <th>
+          <h2>Shop</h2>
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <img id="duo" src="res/img/Pokeball2.png" height="122" width="121"/>
+            Cost:100
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <img id="autoclicker" src="res/img/Greatball.png" height="122" width="160"/>
+          Cost:1000
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <img id="autoclicker2" src="res/img/Ultraball.png" height="122" width="121"/>
+          Cost:10000</th>
+      </tr>
+      <tr>
+        <th>
+          <img id="autoclicker3" src="res/img/Masterball.png" height="122" width="121"/>
+          Cost:100000</th>
+      </tr>
+    </table>
+  </div>
+  <table>
+    <tr>
+      <th>
+        <h2>Inventory</h2>
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <img  src="res/img/Pokeball2.png" height="122" width="121"/>
+        Pokeballs: 0
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <img src="res/img/Greatball.png" height="122" width="160"/>
+        Greatballs: 0
+      </th>
+    </tr>
+    <tr>
+      <th>
+        <img src="res/img/Ultraball.png" height="122" width="121"/>
+        Ultraballs: 0</th>
+    </tr>
+    <tr>
+      <th>
+        <img src="res/img/Masterball.png" height="122" width="121"/>
+        Masterballs: 0</th>
+    </tr>
+  </table>
 
-    <!-- You can also require other files to run in this process -->
+
+    <script src="res/js/main.js"></script>
     <script src="./renderer.js"></script>
   </body>
 </html>
